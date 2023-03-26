@@ -1,0 +1,11 @@
+[Unit]
+Description=CPU FAN Controll
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /usr/lib/CPU_FAN_BBB/CPU_FAN_BBB.py
+
+[Install]
+WantedBy=multi-user.target
