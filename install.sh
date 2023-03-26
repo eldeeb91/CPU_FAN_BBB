@@ -1,7 +1,8 @@
 echo "Installing needed libs"
 sudo pip3 install Adafruit_BBIO
 echo "Copy files"
-sudo cp ./src/CPU_FAN_BBB.py /usr/lib/CPU_FAN_BBB/CPU_FAN_BBB.py
+sudo mkdir /usr/lib/CPU_FAN_BBB/
+sudo cp ./src/CPU_FAN_BBB/CPU_FAN_BBB.py /usr/lib/CPU_FAN_BBB/CPU_FAN_BBB.py
 sudo cp ./CPU_FAN_BBB.service /lib/systemd/system/CPU_FAN_BBB.service
 
 sudo systemctl daemon-reload
