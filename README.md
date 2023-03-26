@@ -11,5 +11,5 @@ cd ~/
 git clone https://github.com/eldeeb91/CPU_FAN_BBB.git
 cd CPU_FAN_BBB
 
-sudo ./install.sh
+bash install.sh
 ```
