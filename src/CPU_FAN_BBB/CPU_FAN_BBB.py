@@ -28,7 +28,7 @@ while(1):
 #	DC=int(DC)
 #	PWM.start(PWMPin,DC,Freq)
 
-	samples=[0,0,0,0]
+	samples=[0]*NUMSAMPLES # Preallocating
 	for i in range(NUMSAMPLES):
 		samples[i] = ADC.read_raw(analogPin);
 #		print(f"ADC_RAW={samples[i]}")
